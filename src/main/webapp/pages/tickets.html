@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="../assets/img/logo-CAC.png" type="image/x-icon">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/style_tickets.css">
+        <title>Conprar Tickets - Integrador FrontEnd</title>
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg h-100 navbar-dark nav-atributos">
+                <div class="container">
+                    <div class="logo">
+                        <img src="../assets/img/codoacodo.png" alt="Logo Codo a Codo">
+                        <h2>Conf Bs As</h2>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end">
+                            <li class="nav-item">
+                                <a class="btn-conferencia nav-link" aria-current="page" href="../index.html#cuerpo-de-pagina">La conferencia</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link boton-nav" href="../index.html#oradores">Los oradores</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link boton-nav" href="../index.html#lugar">El lugar y la fecha</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link boton-nav" href="../index.html#ser-orador">Conviértete en orador</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn-ticket" href="#comprar-tickets">Comprar tickets</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!--    VIEJO NAV
+            <div class="logo">
+                <img src="../assets/img/codoacodo.png" alt="Logo Codo a Codo">
+                <h2>Conf Bs As</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a class="btn-conferencia" href="../index.html#conferencia">La conferencia</a>
+                    </li>
+                    <li>
+                        <a href="../index.html#oradores">Los oradores</a>
+                    </li>
+                    <li>
+                        <a href="../index.html#lugar">El lugar y la fecha</a>
+                    </li>
+                    <li>
+                        <a href="../index.html#ser-orador">Conviértete en orador</a>
+                    </li>
+                    <li>
+                        <a class="btn-ticket" href="#comprar-tickets">Comprar tickets</a>
+                    </li>
+                </ul>
+            </nav>
+            <i class="fa-solid fa-bars" style="color: #ffffff"></i>
+            -->
+        </header>
+
+        <main>
+            <section class="compraDeTickets">
+                <div class="container-tarjetasCategoria">
+                    <div class="tarjeta tarjeta-1">
+                        <h2>Estudiante</h2>
+                        <h3>Tienen un descuento</h3>
+                        <h3 class="porcentaje">80%</h3>
+                        <h4>* presentar documentación</h4>
+                    </div>
+                    <div class="tarjeta tarjeta-2">
+                        <h2>Trainee</h2>
+                        <h3>Tienen un descuento</h3>
+                        <h3 class="porcentaje">50%</h3>
+                        <h4>* presentar documentación</h4>
+                    </div>
+                    <div class="tarjeta tarjeta-3">
+                        <h2>Junior</h2>
+                        <h3>Tienen un descuento</h3>
+                        <h3 class="porcentaje">15%</h3>
+                        <h4>* presentar documentación</h4>
+                    </div>
+                </div>
+
+                <div class="seccion-formulario">
+                    <div id="comprar-tickets" class="container-formulario">
+                        <div class="titleFormulario">
+                            <h3>VENTA</h3>
+                            <h1>VALOR DE TICKET $200</h1>
+                        </div>
+
+                        <form>
+                            <div class="container-nombreApellido">
+                                <input class="estilo-formulario" type="text" id="nombre" name="nombre" placeholder="Nombre">
+                                <input class="estilo-formulario" type="text" id="apellido" name="apellido" placeholder="Apellido">
+                            </div>
+                            <input class="estilo-formulario" type="email" id="correo" name="correo" placeholder="Correo">
+
+                            <div class="container-cantidadCategoria">
+                                <div class="caja-cantidad">
+                                    <h2>Cantidad</h2>
+                                    <input class="estilo-formulario" type="number" id="numero" name="numero" min="0" placeholder="cantidad">
+                                </div>
+                                <div class="caja-categoria">
+                                    <h2>Categoría</h2>
+                                    <select class="estilo-formulario" id="seleccion">
+                                        <option selected disabled>Elija una categoría</option>
+                                        <option>Estudiante</option>
+                                        <option>Trainee</option>
+                                        <option>Junior</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <p class="importe-de-Precio">Total a pagar: $<span id="precio">0.00</span></p>
+
+                            <div class="container-botones">
+                                <button class="estilo-boton" name="borrar" id="borrar">Borrar</button><button class="estilo-boton" name="resumen" id="resumen">Resumen</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <a class="item-footer" href="#">Preguntas frecuentas</a>
+            <a class="item-footer" href="#">Contáctanos</a>
+            <a class="item-footer" href="#">Prensa</a>
+            <a class="item-footer" href="#">Conferencias</a>
+            <a class="item-footer" href="#">Términos y condiciones</a>
+            <a class="item-footer" href="#">Privacidad</a>
+            <a class="item-footer" href="#">Estudiantes</a>
+        </footer>
+
+        <script src="../js/script.js"></script>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

@@ -1,0 +1,37 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>cac</groupId>
+  <artifactId>integrador_java_cac</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging>
+  <description> Proyecto Integrador web Codo a Codo</description>
+  <!-- Agrego la version de java -->
+    <properties>
+      <maven.compiler.source> 17 </maven.compiler.source>
+      <maven.compiler.target> 17 </maven.compiler.target>
+    </properties>
+    <!-- Definir las dependencias del proyecto -->
+    <dependencies>
+
+      <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+      <dependency>
+        <groupId>mysql</groupId>
+        <artifactId>mysql-connector-java</artifactId>
+        <version>8.0.31</version>
+      </dependency>
+
+      <!-- Agrego dependencia para poder usar los controllers con tecnologia servlet -->
+      <dependency>
+        <groupId>javax.servlet</groupId>
+        <artifactId>javax.servlet-api</artifactId>
+        <version>2.3.3</version>
+        <scope>provided</scope>
+      </dependency>
+      
+    </dependencies>
+    <!-- Contexto de la app para cuendo se despliegue con Tomcat.
+    Si tengo muchas apps, cada una tendría su contexto -->
+    <build>
+      <finalName>Integrador CaC</finalName>
+    </build>
+</project>

@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&family=Roboto+Mono:wght@200;300;400;500;600&display=swap');
+
+:root {
+  --bgcolor: #353a40;
+  --textcolor: #f9f9f9ed;
+  --white: #ffffff;
+  --form-border: rgb(211 211 211);
+  --btn-sucess: #29a744;
+  --btn-olive: #96c93d;
+  --btn-border: #9ebc64;
+  --btn-conferencia: #d7d7d7;
+  --bgfooter: #1d506d;
+  --bgprecio: #cbe5fe;
+  --textcolor-precio: #113b6d;
+  --precio-border: #c5d8e9;
+  --link-inactive: #949c9b;
+  --js: #fec007;
+  --react: #1a9cb0;
+  --negocios: #6d757d;
+  --startups: #dc3546;
+  --text-grey: #808080;
+}
+  
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ------------------------------ HEADER - NAV ------------------------------ */
+header {
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+
+.logo h2 {
+    font-size: 1rem;
+    margin: 0;
+}
+  
+.logo img {
+    width: 6rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav-atributos{
+  background-color: var(--bgcolor);
+  color: var(--textcolor);
+}
+
+.boton-nav {
+    color: var(--link-inactive);
+}
+  
+.boton-nav:active,
+.boton-nav:hover {
+    color: var(--textcolor);
+    transition: 0.3s;
+}
+
+.btn-conferencia {
+  color: var(--btn-conferencia);
+}
+.btn-conferencia:hover {
+  color: var(--white);
+}
+
+.btn-ticket {
+    color: var(--btn-sucess);
+}
+.btn-ticket:hover {
+    color: #5bd976;
+}
+  
+  /* ------------------------- BANNER - LA CONFERENCIA ------------------------ */
+  .banner {
+    position: relative;
+    color: var(--textcolor);
+    text-align: end;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 89vh;
+  }
+  
+  .background-image {
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    filter: brightness(0.4);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .banner-text {
+    width: 45%;
+    padding: 13% 5% 6% 0%;
+    line-height: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+  }
+
+  .banner-text h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .banner-text p {
+    margin-bottom: 1.5rem;
+    text-align: right;
+  }
+
+  .container-btn-banner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    gap: 5%;
+  }
+
+  .container-btn-banner a {
+    color: var(--textcolor);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    padding: 0.5rem;
+    margin-bottom: 15px;
+    border-radius: 0.3rem;
+    transition: 0.3s;
+  }
+  
+  .btn-orador {
+    border: 2px rgba(255, 255, 255, 0.35) solid;
+  }
+  
+  .btn-orador:hover {
+    border-color: var(--btn-conferencia);
+    color: var(--white);
+  }
+  
+  .btn-comprar {
+    background-color: var(--btn-sucess);
+  }
+  
+  .btn-comprar:hover {
+    background-color: #258139;
+    color: var(--white);
+  }
+  
+  .title {
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    line-height: 1rem;
+  }
+  
+  .title h4 {
+    font-size: 1rem;
+    color: var(--text-grey);
+  }
+  
+  .title h2 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  /* ------------------------- SECTION - LOS ORADORES ------------------------- */
+  #oradores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+  
+  .container-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .card {
+    width: 14rem;
+    border: 1px solid var(--form-border);
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .card img {
+    height: 60%;
+  }
+  
+  .text-card {
+    padding: 10px;
+  }
+  
+  .link-card {
+    display: inline-block;
+    font-size: 0.7rem;
+    border-radius: 0.2rem;
+    padding: 4px;
+    color: var(--textcolor);
+    font-weight: bold;
+  }
+  
+  .text-card h3 {
+    font-weight: bold;
+    font-size: 16px;
+    margin: 5px 0 10px;
+  }
+  
+  .javascript {
+    background-color: var(--js);
+    color: #000000;
+  }
+  .react {
+    background-color: var(--react);
+  }
+  .swift{
+    background-color: #e84e36;
+  }
+  .csharp {
+    background-color: #67217a;
+  }
+  .assembly {
+    background-color: #000000;
+  }
+  .sistemas-operativos{
+    background-color: #113b6d;
+  }
+  .negocios {
+    background-color: var(--negocios);
+  }
+  .startups {
+    background-color: var(--startups);
+  }
+
+  .text-card p {
+    font-size: 12px;
+    line-height: 1.2rem;
+  }
+  
+  /* ------------------------- SECTION - LUGAR Y FECHA ------------------------ */
+  #lugar {
+    display: flex;
+    height: auto;
+  }
+  
+  #lugar img {
+    width: 50%;
+    object-fit: cover;
+  }
+  
+  .text-right {
+    color: var(--textcolor);
+    background-color: var(--bgcolor);
+    font-size: 12px;
+    width: 50%;
+    padding: 1rem;
+    border-left: 1px solid var(--textcolor);
+    text-align: justify;
+  }
+  
+  .text-right p {
+    line-height: 1.2rem;
+    margin: 0.8rem 0;
+  }
+  
+  .text-right a {
+    padding: 0.3rem;
+    color: var(--textcolor);
+    border: 1px solid var(--textcolor);
+    font-size: 10px;
+    border-radius: 0.25rem;
+  }
+  
+  #btn-card2:hover {
+    cursor: pointer;
+    border-color: var(--btn);
+    color: var(--btn);
+  }
+  
+  /* ---------------------- FORM - CONVIERTETE EN ORADOR ---------------------- */
+  #ser-orador {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .subt-form {
+    font-size: 12px;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+  
+  .text-form {
+    font-size: 1rem;
+  }
+  
+  .form-oradores {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+  
+  input,
+  textarea {
+    border: 1px solid var(--text-grey);
+    color: var(--text-grey);
+  }
+  
+  input {
+    width: 100%;
+    margin-bottom: 0.5rem;
+    height: 2rem;
+    border: 1px solid var(--link-inactive);
+    padding: 0.5rem;
+    color: var(--bgcolor);
+    font-size: 12px;
+  }
+  
+  textarea {
+    width: 100%;
+    padding: 0.5rem;
+    font-weight: bold;
+  }
+  
+  .text-form {
+    margin-bottom: 0.5rem;
+    font-style: italic;
+  }
+  
+  #submit {
+    width: 100%;
+    height: 2.2rem;
+    border: 1px solid var(--btn-border);
+    border-radius: 5px;
+    color: var(--textcolor);
+    font-size: 12px;
+    background-color: var(--btn-olive);
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  
+  #submit:hover {
+    background-color: #789f33;
+    color: var(--textcolor);
+    transition: 0.3s;
+  }
+  
+  #fname {
+    margin-right: 0.3rem;
+  }
+  
+  /* --------------------------------- FOOTER --------------------------------- */
+  footer {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to right, #1d3744, #1d3e4f, #1d455a, #1d4c66, #1e5372);
+    flex-wrap: wrap;
+    font-family: 'Poppins', sans-serif;
+}
+
+.item-footer {
+    color: var(--textcolor);
+    font-size: 12px;
+    text-align: center;
+    margin: 0.5rem 1rem;
+    text-decoration: none;
+    width: 5rem;
+}
+  
+  /* ------------------------------ MEDIA QUERIES ----------------------------- */
+  @media (max-width: 576px) {
+    .banner-text {
+      width: 60%;
+    }
+  
+    .text-right {
+      padding: 1.5rem;
+      text-align: justify;
+    }
+  
+    .text-right p {
+      margin-bottom: 1rem;
+    }
+  
+    #btn-card2 {
+      font-size: 12px;
+      margin-bottom: 5rem;
+    }
+  
+    .form-oradores {
+      width: 60%;
+    }
+  }
+  
+  @media (min-width: 577px) and (max-width: 768px) {
+
+    .banner-text {
+      width: 60%;
+    }
+  
+    .text-right {
+      padding: 1rem;
+      text-align: justify;
+    }
+  
+    #btn-card2 {
+      font-size: 12px;
+    }
+  
+    .text-right p {
+      margin-bottom: 2rem;
+    }
+  
+    .form-oradores {
+      width: 50%;
+    }
+
+  }
+  
+  @media (min-width: 769px) and (max-width: 992px) {
+    .banner-text {
+      font-size: 14px;
+      width: 50%;
+    }
+  }
