@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
-<<<<<<< HEAD
     <wb-module deploy-name="integrador">
         <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
         <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
@@ -8,22 +7,4 @@
         <property name="java-output-path" value="/integrador_cac/target/classes"/>
         <property name="context-root" value="integrador"/>
     </wb-module>
-=======
-        
-    <wb-module deploy-name="Integrador CaC">
-                
-        <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
-                
-        <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
-                
-        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
-                
-        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
-                
-        <property name="java-output-path" value="/integrador_java_cac/target/classes"/>
-        <property name="context-root" value="Integrador_CaC"/>
-            
-    </wb-module>
-    
->>>>>>> b33e9494436721e1c38134129d1ebfc8f48eec85
 </project-modules>

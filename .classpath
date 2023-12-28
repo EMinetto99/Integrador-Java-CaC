@@ -26,11 +26,7 @@
 			<attribute name="optional" value="true"/>
 		</attributes>
 	</classpathentry>
-<<<<<<< HEAD
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-11">
-=======
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-17">
->>>>>>> b33e9494436721e1c38134129d1ebfc8f48eec85
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
